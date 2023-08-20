@@ -3,7 +3,6 @@ const Header = (props) => (
 )
 
 const Content = (props) => {
-  // console.log(props)
   return <div>
     <Part parts={props.parts[0]} />
     <Part parts={props.parts[1]} />
@@ -16,8 +15,6 @@ const Part = (props) => (
 )
 
 const Total = (props) => {
-  console.log(props)
-  console.log(props.parts[0].exercises)
   return <p>Number of exercises {props.parts[0].exercises + props.parts[1].exercises + props.parts[2].exercises}</p>
 }
 
